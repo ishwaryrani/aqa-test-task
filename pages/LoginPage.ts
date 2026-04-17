@@ -12,4 +12,9 @@ export class LoginPage {
     await this.page.fill(this.password, pass);
     await this.page.click(this.loginBtn);
   }
+  async goto() {
+    console.log('Page object:', this.page); 
+    await this.page.goto('http://localhost:8080'); 
+  }
+
 }
